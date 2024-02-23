@@ -1,5 +1,11 @@
 import { ReactNode } from 'react'
 import SideNav from '../ui/dashboard/sidenav'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+}
 
 interface layoutProps {
   children: ReactNode
